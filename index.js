@@ -28,7 +28,7 @@
 
 	const projects = [
 		{
-			title: "Buddapp - Gestor Financiero",
+			title: "Cashap - Gestor Financiero",
 			type: "FullStack",
 			categories: ["Financiero"],
 			status: "En progreso",
