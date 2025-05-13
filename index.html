@@ -14,7 +14,7 @@
 
 <body>
   <div class="app__container">
-    <div class="sidebar">
+    <aside class="sidebar">
       <header class="sidebar__header">
         <img src="/images/perfil.jpeg" alt="Camilo's Profile Picture" class="header__img">
         <div class="header__content">
@@ -34,12 +34,17 @@
       </header>
       <nav class="sidebar__nav">
         <a href="#about" class="nav__link"><i class="fa-solid fa-user-large"></i> Acerca de mi</a>
+        <a href="#projects" class="nav__link"><i class="fa-solid fa-folder"></i> Proyectos</a>
         <a href="#skills" class="nav__link"><i class="fa-solid fa-gear"></i> Habilidades</a>
         <a href="#experience" class="nav__link"><i class="fa-solid fa-briefcase"></i> Experiencia</a>
-        <a href="#projects" class="nav__link"><i class="fa-solid fa-folder"></i> Proyectos</a>
         <a href="#contact" class="nav__link"><i class="fa-solid fa-envelope"></i> Contacto</a>
       </nav>
-    </div>
+      <div class="sidebar__download-cv">
+        <a class="download-cv" href="./camilo_curriculum_vitae.pdf" download="camilo_curriculum_vitae.pdf">
+          <i class="fas fa-file-arrow-down"></i> Descargar Curriculum
+        </a>
+      </div>
+    </aside>
     <main class="content">
       <section id="about" class="about">
         <div class="about__header">
@@ -63,121 +68,6 @@
           </p>
         </div>
       </section>
-      <section id="skills" class="skills">
-        <div class="skills__header">
-          <h2 class="skills__title">Habilidades</h2>
-          <div></div>
-        </div>
-        <div class="skills__content">
-          <div class="skill">
-            <h4>JavaScript</h4>
-          </div>
-          <div class="skill">
-            <h4>TypeScript</h4>
-          </div>
-          <div class="skill">
-            <h4>React</h4>
-          </div>
-          <div class="skill">
-            <h4>Vue 3</h4>
-          </div>
-          <div class="skill">
-            <h4>Node</h4>
-          </div>
-          <div class="skill">
-            <h4>Express</h4>
-          </div>
-          <div class="skill">
-            <h4>Java</h4>
-          </div>
-          <div class="skill">
-            <h4>Spring</h4>
-          </div>
-          <div class="skill">
-            <h4>Python</h4>
-          </div>
-          <div class="skill">
-            <h4>FastAPI</h4>
-          </div>
-          <div class="skill">
-            <h4>Flask</h4>
-          </div>
-          <div class="skill">
-            <h4>MongoDB</h4>
-          </div>
-          <div class="skill">
-            <h4>MySQL</h4>
-          </div>
-          <div class="skill">
-            <h4>PostgreSQL</h4>
-          </div>
-          <div class="skill">
-            <h4>Docker</h4>
-          </div>
-          <div class="skill">
-            <h4>Kubernetes</h4>
-          </div>
-          <div class="skill">
-            <h4>Firebase</h4>
-          </div>
-        </div>
-      </section>
-      <section id="experience" class="experience">
-        <div class="experience__header">
-          <h2 class="experience__title">Experiencia Laboral</h2>
-          <div></div>
-        </div>
-        <div class="experience__content">
-          <div class="experience-card">
-            <div class="experience-card__header">
-              <h4 class="experience-card__title">Desarrollador de Software</h4>
-              <div>
-                <h5 class="experience-card__subtitle">DT360 Group</h5>
-                <h5 class="experience-card__date">04/2023 hasta 02/2024</h5>
-              </div>
-            </div>
-            <div class="experience-card__content">
-              <ul>
-                <li>Lideré el desarrollo de soluciones FullStack utilizando tecnologías como ReactJS, Express, MongoDB,
-                  Python y
-                  FastAPI, aplicando sólidas prácticas de desarrollo para asegurar soluciones escalables y mantenibles
-                  por el equipo.</li>
-                <li>Dirigí un equipo de desarrollo mediante metodologías ágiles como Scrum, organizando reuniones
-                  diarias,
-                  supervisando la productividad y garantizando la entrega oportuna de requerimientos. Brindé soporte
-                  técnico y
-                  orientación constante a mis colegas en la creación de soluciones.</li>
-                <li>Mejoré los métodos de despliegue para nuevos desarrollos, optimizando la agilidad y
-                  compatibilidad con
-                  diversos entornos de trabajo.</li>
-                <li>Integré técnicas avanzadas de machine learning para análisis estadístico y predicciones de
-                  incidentes de seguridad,
-                  utilizando Python, Pandas y FastAPI.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="experience-card">
-            <div class="experience-card__header">
-              <h4 class="experience-card__title">Desarrollador de Software FullStack</h4>
-              <div>
-                <h5 class="experience-card__subtitle">Freelance</h5>
-                <h5 class="experience-card__date">03/2024 hasta Actualidad</h5>
-              </div>
-            </div>
-            <div class="experience-card__content">
-              <ul>
-                <li>Realicé el mantenimiento y la optimización de aplicaciones desarrolladas en ReactJS, mejorando el
-                  rendimiento en producción y agregando nuevas funcionalidades para satisfacer las necesidades del
-                  usuario final.
-                </li>
-                <li>Planifiqué y dirigí nuevos proyectos informáticos utilizando tecnologías como ReactJS, TypeScript,
-                  Express, MongoDB y/o PostgreSQL. Implementé metodologías ágiles para la gestión eficiente del equipo
-                  de desarrollo, asegurando una entrega eficaz y organizada.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="projects" class="projects">
         <div class="projects__header">
           <h2 class="projects__title">Proyectos</h2>
@@ -193,18 +83,16 @@
             </div>
             <div class="project-card__content">
               <h3 class="project-card__title">Gestor Financiero</h3>
-              <p class="project-card__type">
-                <strong>Tipo:</strong> Fullstack
-              </p>
-              <p class="project-card__category">
-                <strong>Categoría:</strong> Financiero
+              <p class="project-card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos sequi facere saepe, non labore
+                aut voluptate nulla ipsa, modi, reprehenderit quia vel molestias deleniti blanditiis sed ab corrupti
+                reiciendis!
               </p>
               <div class="project-card__technologies">
-                <strong>Tecnologías:</strong>
                 <ul class="tech-list">
-                  <li><i class="fab fa-js"></i></li>
-                  <li><i class="fab fa-react"></i></li>
-                  <li><i class="fab fa-node-js"></i></li>
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>NodeJS</li>
                 </ul>
               </div>
             </div>
@@ -292,6 +180,120 @@
           </div>
         </div>
       </section>
+      <section id="skills" class="skills">
+        <div class="skills__header">
+          <h2 class="skills__title">Habilidades</h2>
+          <div></div>
+        </div>
+        <div class="skills__content">
+          <div class="skill">
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill">
+            <h4>TypeScript</h4>
+          </div>
+          <div class="skill">
+            <h4>React</h4>
+          </div>
+          <div class="skill">
+            <h4>Remix</h4>
+          </div>
+          <div class="skill">
+            <h4>Vue 3</h4>
+          </div>
+          <div class="skill">
+            <h4>Nuxt</h4>
+          </div>
+          <div class="skill">
+            <h4>Node</h4>
+          </div>
+          <div class="skill">
+            <h4>Express</h4>
+          </div>
+          <div class="skill">
+            <h4>Golang</h4>
+          </div>
+          <div class="skill">
+            <h4>Python</h4>
+          </div>
+          <div class="skill">
+            <h4>FastAPI</h4>
+          </div>
+          <div class="skill">
+            <h4>Flask</h4>
+          </div>
+          <div class="skill">
+            <h4>MongoDB</h4>
+          </div>
+          <div class="skill">
+            <h4>MySQL</h4>
+          </div>
+          <div class="skill">
+            <h4>PostgreSQL</h4>
+          </div>
+          <div class="skill">
+            <h4>Docker</h4>
+          </div>
+          <div class="skill">
+            <h4>Kubernetes</h4>
+          </div>
+          <div class="skill">
+            <h4>Firebase</h4>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <div class="experience__header">
+          <h2 class="experience__title">Experiencia Laboral</h2>
+          <div></div>
+        </div>
+        <div class="experience__content">
+          <div class="experience-card">
+            <div class="experience-card__header">
+              <h4 class="experience-card__title">Desarrollador de Software</h4>
+              <div>
+                <h5 class="experience-card__subtitle">DT360 Group</h5>
+                <h5 class="experience-card__date">04/2023 hasta 02/2024</h5>
+              </div>
+            </div>
+            <div class="experience-card__content">
+              <ul>
+                <li>Lideré el desarrollo de un sistema de monitoreo comunal utilizando React, Node, MongoDB y Firebase.
+                </li>
+                <li>Implementé arquitectura de microservicios para mejorar la escalabilidad de las nuevas aplicaciones y
+                  también las anteriores, mejorando el rendimiento general de estos sistemas en un 60%</li>
+                <li>Desarrollé un servicio de atención al cliente por WhatsApp utilizando GPT-4, automatizando
+                  respuestas
+                  y optimizando la interacción con usuarios.</li>
+                <li>Integré modelos de Machine Learning en el sistema de monitoreo, logrando una precisión del 75% en
+                  predicciones de cumplimiento de patrulleros..</li>
+                <li>
+                  Optimicé el despliegue con Docker, Docker Compose y Kubernetes, facilitando la compatibilidad en
+                  múltiples entornos y mejorando la administración de microservicios.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-card__header">
+              <h4 class="experience-card__title">Desarrollador de Software FullStack</h4>
+              <div>
+                <h5 class="experience-card__subtitle">Freelance</h5>
+                <h5 class="experience-card__date">03/2024 hasta Actualidad</h5>
+              </div>
+            </div>
+            <div class="experience-card__content">
+              <ul>
+                <li>Planifiqué y desarrollé proyectos web para sectores como finanzas, e-commerce y seguridad.
+                </li>
+                <li>Optimicé el rendimiento de aplicaciones hasta en un 70%, mejorando la experiencia del usuario.</li>
+                <li>Lideré equipos de desarrollo aplicando metodologías ágiles (Scrum y Kanban), garantizando entregas
+                  eficientes y alineadas con los requerimientos del cliente.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="contact" class="contact">
         <div class="contact__header">
           <h2 class="contact__title">Contacto</h2>
@@ -305,11 +307,6 @@
           <div class="contact-card">
             <span>Email: </span>
             <span>camsanbar.dev@gmail.com</span>
-          </div>
-          <div class="contact-card">
-            <a class="download-cv" href="./camilo_curriculum_vitae.pdf" download="camilo_curriculum_vitae.pdf">
-              <i class="fas fa-file-arrow-down"></i> Descargar Curriculum
-            </a>
           </div>
         </div>
       </section>
